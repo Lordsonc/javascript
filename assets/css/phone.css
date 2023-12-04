@@ -1,0 +1,153 @@
+@media screen and (max-width: 700px) {
+  :root {
+    --paddingValue: 1em;
+  }
+
+  #accDrop {
+    display: none;
+  }
+
+  #search {
+    padding: 5px;
+    width: 75%;
+  }
+
+  #search input {
+    width: 80%;
+  }
+
+  #searchBtn {
+    display: none;
+  }
+
+  #asideLeft,
+  #asideRight {
+    display: none;
+  }
+
+  #cartText {
+    display: none;
+  }
+
+  main {
+    flex-basis: 100%;
+  }
+
+  #menuBar {
+    display: block;
+    margin-left: 1em;
+  }
+
+  #footerMini {
+    flex-direction: column;
+    gap: 2em;
+  }
+
+  #signOutMoCon {
+    display: none;
+  }
+
+  #subIn {
+    width: 58%;
+  }
+
+  #subIn input {
+    width: 80%;
+  }
+
+  .productCard {
+    width: calc(100% / 2.1);
+    justify-content: space-between;
+  }
+
+  #productImage img {
+    width: 100%;
+  }
+
+  #jumiaLogo {
+    width: 60px;
+  }
+
+  #flashItem,
+  #topSellingItem {
+    justify-content: space-between;
+  }
+
+  #signInMain,
+  #signUpMain {
+    flex-basis: 100%;
+  }
+
+  #signIn,
+  #signUp {
+    width: 100%;
+  }
+
+  #innerCat {
+    justify-content: space-between;
+  }
+
+  #innerCat a {
+    width: calc(100% / 4.4);
+  }
+
+  #innerCat a img {
+    width: 100%;
+  }
+
+  #mobileMenu {
+    display: flex;
+  }
+
+  #mobileMenu {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background-color: #000;
+    left: -600px;
+    top: 0;
+    z-index: 999;
+    padding: 1em;
+    transition: 0.5s ease-in-out;
+  }
+
+  #mobileMenu .signInMobile {
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    flex-wrap: wrap;
+  }
+
+  #mobileMenu .signInMobile li a {
+    color: #fff;
+  }
+
+  #mobileMenu .signInMobile li {
+    list-style: none;
+    width: 100%;
+    color: #fff;
+  }
+
+  #mainProductDetails,
+  #mainCon {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+
+  #pDImage,
+  #pDText {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  #pDImage img {
+    width: 100% !important;
+    margin-bottom: 10px;
+  }
+
+  #asideProductDetails {
+    width: 100%;
+  }
+}

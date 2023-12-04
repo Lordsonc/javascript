@@ -1,0 +1,575 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@font-face {
+  font-family: myFont;
+  src: url(src/font/FONTSPRINGDEMO-CeraRoundProRegular.woff);
+}
+
+body {
+  overflow-x: hidden;
+}
+
+#cartCon {
+  width: 100vw;
+  max-width: 100vw;
+  overflow-x: auto;
+}
+
+:root {
+  --paddingValue: 1em 50px;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: myFont, Arial, Helvetica, sans-serif;
+}
+
+#advert {
+  display: flex;
+  justify-content: center;
+  background-color: #008000;
+}
+
+header {
+  padding: var(--paddingValue);
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  background-color: #fff;
+}
+
+#jumiaLogo {
+  width: 120px;
+}
+
+#headerSec {
+  display: flex;
+  position: relative;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header section div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header section div a {
+  color: #000;
+  text-decoration: none;
+}
+
+#sellOn {
+  background-color: #f1f1f2;
+  padding: 5px 50px;
+  font-size: 12px;
+}
+
+#sellOn a {
+  display: flex;
+  align-items: center;
+  color: #069c54;
+  text-decoration: none;
+  transition: 0.3s ease;
+}
+
+#sellOn a:hover {
+  text-decoration: underline;
+}
+
+#search {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #f1f1f2;
+  padding: 5px 10px;
+  border-radius: 5px;
+  margin-right: 10px;
+  font-size: 1em;
+}
+
+#search input {
+  padding: 5px;
+  border: none;
+  outline: none;
+  width: 520px;
+}
+
+i {
+  color: #069c54;
+}
+
+button,
+#signIn,
+#liveChat,
+#signOut,
+#signMoIn,
+#signMoOut {
+  background-color: #069c54;
+  color: #fff;
+  padding: 10px;
+  border: 0;
+  border-radius: 5px !important;
+  text-align: center;
+}
+
+#menuBar {
+  display: none;
+}
+
+#accDrop:hover {
+  color: #069c54;
+}
+
+#signIn,
+#signMoIn,
+#signMoOut,
+#liveChat,
+#signOut {
+  margin: 5px;
+  max-width: 95%;
+}
+
+.dropdown-menu {
+  width: 250px !important;
+}
+
+.dropdown-item {
+  margin-bottom: 10px;
+}
+
+.dropdown-item i {
+  margin-right: 10px;
+}
+
+#accDrop {
+  margin-right: 5px;
+}
+
+#mainCon {
+  display: flex;
+  justify-content: space-between;
+  background-color: #f1f1f2;
+  padding: var(--paddingValue);
+}
+
+aside {
+  flex-basis: 18.5%;
+}
+
+main {
+  flex-basis: 60%;
+  border-radius: 5px;
+}
+
+#carouselExampleSlidesOnly,
+.carousel-item,
+.carousel-inner {
+  border-radius: 5px !important;
+}
+
+#asideRight {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+#asideRight img {
+  border-radius: 5px;
+  height: 48%;
+}
+
+#asideLeft {
+  background-color: #fff;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+#asideLeft a {
+  text-decoration: none;
+  color: #9b9b9c;
+  display: block;
+  padding: 5px;
+}
+
+#asideLeft a:hover,
+#asideLeft a:hover i {
+  color: #069c54;
+}
+
+#asideLeft a i {
+  color: #9b9b9c;
+  margin-right: 5px;
+  font-size: 14px;
+  width: 1.3em;
+}
+
+#asideLeft a span {
+  font-size: 12px;
+}
+
+#categories {
+  padding: var(--paddingValue);
+  background-color: #f1f1f2;
+}
+
+#innerCat {
+  padding: 10px 20px;
+  background-color: #fff;
+  border-radius: 5px;
+  display: flex;
+  flex-wrap: wrap;
+  overflow: hidden;
+  gap: 10px;
+  transition: 2s ease-in-out;
+}
+
+#innerCat a img {
+  width: 130px;
+}
+
+#innerCat a {
+  text-decoration: none;
+  color: #9b9b9c;
+  font-size: 12px;
+  width: 130px;
+}
+
+#mobileMenu {
+  display: none;
+}
+
+#innerCat a p {
+  text-align: center;
+}
+
+#innerCat a:hover {
+  transform: scale(1.06);
+  box-shadow: 0 0 10px 0 #f1f1f2;
+}
+
+#topSelling,
+#flash {
+  padding: var(--paddingValue);
+  background-color: #f1f1f2;
+}
+
+#innerTopSelling,
+#innerFlash {
+  padding: 14px;
+  background-color: #fff;
+  border-radius: 5px;
+}
+
+#topSellingItem,
+#flashItem {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 16px;
+}
+
+.productImage img {
+  width: 200px;
+  border-radius: 5px;
+}
+
+.productCard {
+  width: 180px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+.productCard:hover {
+  transform: scale(1.01);
+  box-shadow: 0 0 15px 0 #9b9b9c;
+}
+
+.productName,
+.oldPrice {
+  color: #9b9b9c;
+  font-size: 14px;
+  padding: 0;
+}
+
+.productText {
+  padding: 10px;
+}
+
+.oldPrice {
+  text-decoration: line-through;
+}
+
+.price {
+  font-size: 14px;
+  font-weight: 500;
+  padding: 0 !important;
+  margin: 0;
+}
+
+#innerFlash h5 {
+  background-color: #e61601;
+  padding: 10px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  color: #fff;
+}
+
+#flashItem p {
+  color: #fff;
+}
+
+#flashItem .productText {
+  background-color: #e61601;
+  border-radius: 5px;
+}
+
+#flash .productCard {
+  border-top: 5px solid #e61601;
+}
+
+footer {
+  background-color: #000;
+  padding: var(--paddingValue);
+}
+
+#footerMini {
+  display: flex;
+  justify-content: space-between;
+  color: #fff;
+  gap: 5%;
+}
+
+#footerSub {
+  flex-basis: 40%;
+}
+
+#footerImg,
+address {
+  flex-basis: 25%;
+}
+
+footer h6 {
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+#sub {
+  display: flex;
+  gap: 5px;
+  justify-content: space-between;
+}
+
+#subBtn {
+  display: flex;
+  flex-basis: 40%;
+  gap: 1em;
+}
+
+#subIn {
+  background-color: #fff;
+  flex-basis: 60%;
+  border-radius: 5px;
+  padding: 0 10px;
+}
+
+#subIn input {
+  padding: 10px;
+  border: none;
+  width: 80%;
+  outline: none;
+  background-color: #fff;
+  color: #000;
+}
+
+#sub button {
+  width: 50%;
+  background-color: transparent;
+  border: 2px solid #9b9b9c;
+}
+
+#sub button:hover {
+  border-color: #069c54;
+  color: #069c54;
+}
+
+address {
+  font-style: italic;
+}
+
+#socialMedia {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 1.5em;
+  font-size: 2.3em;
+}
+
+#socialMedia i {
+  color: #9b9b9c;
+}
+
+#socialMedia i:hover {
+  color: #069c54;
+}
+
+#errMsg {
+  color: #e61601;
+  padding: 10px;
+}
+
+#signUpModal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: #fff;
+  font-size: 2em;
+  text-align: center;
+  gap: 2em;
+  width: 100vw;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+#signUpModal img {
+  width: 100px;
+}
+/* SignUp Page Css Start Here */
+
+#signMainCon {
+  height: 100vh !important;
+}
+
+#signUpMain,
+#signInMain {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  text-align: center;
+  width: 40vw;
+  border-radius: 5px;
+  box-shadow: 0 0 10px 0 #069c54, 0 0 12px #9b9b9c;
+  justify-content: center;
+  align-items: center;
+}
+
+#signUpMain input,
+#signInMain input {
+  width: 90%;
+}
+
+#nameCon {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  width: 90%;
+}
+
+#nameCon .formGroup {
+  flex-basis: 50%;
+}
+
+.formGroup {
+  position: relative;
+  margin-bottom: 30px;
+  width: 90%;
+  border: 1px solid #069c54;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.formGroup label {
+  position: absolute;
+  color: #9b9b9c;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 5px;
+  transition: all 0.5s ease-in-out;
+  pointer-events: none;
+}
+
+.formGroup input {
+  width: 100%;
+  border: none;
+  outline: none;
+}
+
+.formGroup input:focus + label,
+.formGroup input:not(:placeholder-shown) + label {
+  font-size: 16px;
+  top: -15px;
+  color: #069c54;
+}
+
+#signUpMain button,
+#signInMain button {
+  width: 90%;
+}
+
+#signUpMain a,
+#signInMain a {
+  color: #069c54;
+  font-style: italic;
+}
+
+#signInPasswordCon,
+#signOutCon {
+  display: none;
+}
+
+#signInContinueCon {
+  width: 100%;
+}
+
+#signInBtnCon {
+  width: 100%;
+  display: none;
+}
+
+#mainProductDetails {
+  flex-basis: 70%;
+  display: flex;
+  justify-content: space-between;
+  border-radius: 10px;
+  background-color: #fff;
+  gap: 20px;
+  padding: 10px;
+}
+
+#pDImage {
+  flex-basis: 40%;
+
+  border-radius: 5px;
+}
+
+#pDImage img {
+  width: 100%;
+  border-radius: 5px;
+}
+
+#pDText {
+  flex-basis: 60%;
+  padding: 0 10px;
+}
+
+#asideProductDetails {
+  border-radius: 5px;
+  padding: 10px;
+  background-color: #fff;
+  flex-basis: 28%;
+}
+
+#alertCon {
+  position: fixed;
+  top: -400px;
+  z-index: 8899;
+  width: 100vw;
+  transition: 0.3s ease-in-out;
+}
